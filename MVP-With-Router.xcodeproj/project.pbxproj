@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153E04CA2688D5DB00F5D274 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E04C92688D5DB00F5D274 /* UsersModel.swift */; };
+		153E04CC2688D5FE00F5D274 /* UsersAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E04CB2688D5FE00F5D274 /* UsersAddress.swift */; };
 		15AFB23D2688D43D00DB335C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AFB23C2688D43D00DB335C /* AppDelegate.swift */; };
 		15AFB23F2688D43D00DB335C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AFB23E2688D43D00DB335C /* SceneDelegate.swift */; };
 		15AFB2412688D43D00DB335C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AFB2402688D43D00DB335C /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		153E04C92688D5DB00F5D274 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		153E04CB2688D5FE00F5D274 /* UsersAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAddress.swift; sourceTree = "<group>"; };
 		15AFB2392688D43D00DB335C /* MVP-With-Router.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP-With-Router.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AFB23C2688D43D00DB335C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15AFB23E2688D43D00DB335C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		153E04C42688D54900F5D274 /* ApplicationDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				15AFB23C2688D43D00DB335C /* AppDelegate.swift */,
+				15AFB23E2688D43D00DB335C /* SceneDelegate.swift */,
+			);
+			path = ApplicationDelegate;
+			sourceTree = "<group>";
+		};
+		153E04C52688D57800F5D274 /* Storyboard  */ = {
+			isa = PBXGroup;
+			children = (
+				15AFB2422688D43D00DB335C /* Main.storyboard */,
+				15AFB2472688D43E00DB335C /* LaunchScreen.storyboard */,
+			);
+			path = "Storyboard ";
+			sourceTree = "<group>";
+		};
+		153E04C62688D58500F5D274 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15AFB2452688D43E00DB335C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		153E04C72688D58E00F5D274 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				15AFB24A2688D43E00DB335C /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		153E04C82688D5B900F5D274 /* UsersModel */ = {
+			isa = PBXGroup;
+			children = (
+				153E04C92688D5DB00F5D274 /* UsersModel.swift */,
+				153E04CB2688D5FE00F5D274 /* UsersAddress.swift */,
+			);
+			path = UsersModel;
+			sourceTree = "<group>";
+		};
 		15AFB2302688D43D00DB335C = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +110,12 @@
 		15AFB23B2688D43D00DB335C /* MVP-With-Router */ = {
 			isa = PBXGroup;
 			children = (
-				15AFB23C2688D43D00DB335C /* AppDelegate.swift */,
-				15AFB23E2688D43D00DB335C /* SceneDelegate.swift */,
+				153E04C82688D5B900F5D274 /* UsersModel */,
+				153E04C72688D58E00F5D274 /* Configuration */,
+				153E04C62688D58500F5D274 /* Resources */,
+				153E04C52688D57800F5D274 /* Storyboard  */,
+				153E04C42688D54900F5D274 /* ApplicationDelegate */,
 				15AFB2402688D43D00DB335C /* ViewController.swift */,
-				15AFB2422688D43D00DB335C /* Main.storyboard */,
-				15AFB2452688D43E00DB335C /* Assets.xcassets */,
-				15AFB2472688D43E00DB335C /* LaunchScreen.storyboard */,
-				15AFB24A2688D43E00DB335C /* Info.plist */,
 			);
 			path = "MVP-With-Router";
 			sourceTree = "<group>";
@@ -88,7 +134,6 @@
 				C89DFDB7EADF8C3DAB785106 /* Pods-MVP-With-Router.debug.xcconfig */,
 				A6753FF3D92DE348480793C5 /* Pods-MVP-With-Router.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +254,8 @@
 			files = (
 				15AFB2412688D43D00DB335C /* ViewController.swift in Sources */,
 				15AFB23D2688D43D00DB335C /* AppDelegate.swift in Sources */,
+				153E04CC2688D5FE00F5D274 /* UsersAddress.swift in Sources */,
+				153E04CA2688D5DB00F5D274 /* UsersModel.swift in Sources */,
 				15AFB23F2688D43D00DB335C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M4SYRBQBFW;
-				INFOPLIST_FILE = "MVP-With-Router/Info.plist";
+				INFOPLIST_FILE = "MVP-With-Router/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M4SYRBQBFW;
-				INFOPLIST_FILE = "MVP-With-Router/Info.plist";
+				INFOPLIST_FILE = "MVP-With-Router/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

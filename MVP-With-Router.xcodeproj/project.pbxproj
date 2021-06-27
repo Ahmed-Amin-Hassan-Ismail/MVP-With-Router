@@ -15,6 +15,10 @@
 		153E04D82688D72F00F5D274 /* UsersViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153E04D62688D72F00F5D274 /* UsersViewCell.xib */; };
 		153E04DA2688D74100F5D274 /* UsersVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E04D92688D74100F5D274 /* UsersVC+TableView.swift */; };
 		153E04DE2688DB4E00F5D274 /* UsersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E04DD2688DB4E00F5D274 /* UsersInteractor.swift */; };
+		153E04E22688DC1800F5D274 /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E04E12688DC1800F5D274 /* UsersPresenter.swift */; };
+		153E04E42688DC3600F5D274 /* Presenter-Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E04E32688DC3600F5D274 /* Presenter-Protocols.swift */; };
+		153E04E62688DD9700F5D274 /* UsersVC+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E04E52688DD9700F5D274 /* UsersVC+Protocol.swift */; };
+		153E04E82688DEDA00F5D274 /* Presenter+Confirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E04E72688DEDA00F5D274 /* Presenter+Confirm.swift */; };
 		15AFB23D2688D43D00DB335C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AFB23C2688D43D00DB335C /* AppDelegate.swift */; };
 		15AFB23F2688D43D00DB335C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AFB23E2688D43D00DB335C /* SceneDelegate.swift */; };
 		15AFB2442688D43D00DB335C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15AFB2422688D43D00DB335C /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		153E04D62688D72F00F5D274 /* UsersViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersViewCell.xib; sourceTree = "<group>"; };
 		153E04D92688D74100F5D274 /* UsersVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsersVC+TableView.swift"; sourceTree = "<group>"; };
 		153E04DD2688DB4E00F5D274 /* UsersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInteractor.swift; sourceTree = "<group>"; };
+		153E04E12688DC1800F5D274 /* UsersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
+		153E04E32688DC3600F5D274 /* Presenter-Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter-Protocols.swift"; sourceTree = "<group>"; };
+		153E04E52688DD9700F5D274 /* UsersVC+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsersVC+Protocol.swift"; sourceTree = "<group>"; };
+		153E04E72688DEDA00F5D274 /* Presenter+Confirm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+Confirm.swift"; sourceTree = "<group>"; };
 		15AFB2392688D43D00DB335C /* MVP-With-Router.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP-With-Router.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AFB23C2688D43D00DB335C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15AFB23E2688D43D00DB335C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,10 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				153E04DC2688DB3000F5D274 /* Interactor */,
-				153E04D22688D70300F5D274 /* UsersCell */,
-				153E04CE2688D69A00F5D274 /* UsersViewController.swift */,
-				153E04D92688D74100F5D274 /* UsersVC+TableView.swift */,
-				153E04CF2688D69A00F5D274 /* UsersViewController.xib */,
+				153E04DF2688DBCC00F5D274 /* Presenter */,
+				153E04E02688DBEB00F5D274 /* View */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -134,6 +140,28 @@
 				153E04DD2688DB4E00F5D274 /* UsersInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		153E04DF2688DBCC00F5D274 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				153E04E12688DC1800F5D274 /* UsersPresenter.swift */,
+				153E04E72688DEDA00F5D274 /* Presenter+Confirm.swift */,
+				153E04E32688DC3600F5D274 /* Presenter-Protocols.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		153E04E02688DBEB00F5D274 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				153E04D22688D70300F5D274 /* UsersCell */,
+				153E04CE2688D69A00F5D274 /* UsersViewController.swift */,
+				153E04D92688D74100F5D274 /* UsersVC+TableView.swift */,
+				153E04E52688DD9700F5D274 /* UsersVC+Protocol.swift */,
+				153E04CF2688D69A00F5D274 /* UsersViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		15AFB2302688D43D00DB335C = {
@@ -303,9 +331,13 @@
 			files = (
 				153E04D02688D69A00F5D274 /* UsersViewController.swift in Sources */,
 				15AFB23D2688D43D00DB335C /* AppDelegate.swift in Sources */,
+				153E04E62688DD9700F5D274 /* UsersVC+Protocol.swift in Sources */,
+				153E04E82688DEDA00F5D274 /* Presenter+Confirm.swift in Sources */,
+				153E04E22688DC1800F5D274 /* UsersPresenter.swift in Sources */,
 				153E04DA2688D74100F5D274 /* UsersVC+TableView.swift in Sources */,
 				153E04CC2688D5FE00F5D274 /* UsersAddress.swift in Sources */,
 				153E04D72688D72F00F5D274 /* UsersViewCell.swift in Sources */,
+				153E04E42688DC3600F5D274 /* Presenter-Protocols.swift in Sources */,
 				153E04DE2688DB4E00F5D274 /* UsersInteractor.swift in Sources */,
 				153E04CA2688D5DB00F5D274 /* UsersModel.swift in Sources */,
 				15AFB23F2688D43D00DB335C /* SceneDelegate.swift in Sources */,

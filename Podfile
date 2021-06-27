@@ -8,5 +8,6 @@ target 'MVP-With-Router' do
   # Pods for MVP-With-Router
 
   pod 'Alamofire'
-  pod 'SKActivityIndicatorView'
+  pod 'NVActivityIndicatorView'
+   
 end

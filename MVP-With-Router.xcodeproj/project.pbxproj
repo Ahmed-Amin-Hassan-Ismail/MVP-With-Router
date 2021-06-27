@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1521A6942688E83600B43BB7 /* UsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1521A6932688E83600B43BB7 /* UsersRouter.swift */; };
+		1521A6972688E96200B43BB7 /* UsersConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1521A6962688E96200B43BB7 /* UsersConfiguration.swift */; };
+		1521A69E2688ED1D00B43BB7 /* DetailUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1521A69C2688ED1D00B43BB7 /* DetailUserViewController.swift */; };
+		1521A69F2688ED1D00B43BB7 /* DetailUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1521A69D2688ED1D00B43BB7 /* DetailUserViewController.xib */; };
 		153E04CA2688D5DB00F5D274 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E04C92688D5DB00F5D274 /* UsersModel.swift */; };
 		153E04CC2688D5FE00F5D274 /* UsersAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E04CB2688D5FE00F5D274 /* UsersAddress.swift */; };
 		153E04D02688D69A00F5D274 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E04CE2688D69A00F5D274 /* UsersViewController.swift */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1521A6932688E83600B43BB7 /* UsersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRouter.swift; sourceTree = "<group>"; };
+		1521A6962688E96200B43BB7 /* UsersConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersConfiguration.swift; sourceTree = "<group>"; };
+		1521A69C2688ED1D00B43BB7 /* DetailUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserViewController.swift; sourceTree = "<group>"; };
+		1521A69D2688ED1D00B43BB7 /* DetailUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailUserViewController.xib; sourceTree = "<group>"; };
 		153E04C92688D5DB00F5D274 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		153E04CB2688D5FE00F5D274 /* UsersAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAddress.swift; sourceTree = "<group>"; };
 		153E04CE2688D69A00F5D274 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +72,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1521A6922688E82300B43BB7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1521A6932688E83600B43BB7 /* UsersRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1521A6952688E94200B43BB7 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				1521A6962688E96200B43BB7 /* UsersConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		1521A69A2688ECDE00B43BB7 /* Detail User */ = {
+			isa = PBXGroup;
+			children = (
+				1521A6A02688ED6D00B43BB7 /* Configuration  */,
+				1521A69B2688ED0300B43BB7 /* View */,
+			);
+			path = "Detail User";
+			sourceTree = "<group>";
+		};
+		1521A69B2688ED0300B43BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1521A69C2688ED1D00B43BB7 /* DetailUserViewController.swift */,
+				1521A69D2688ED1D00B43BB7 /* DetailUserViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1521A6A02688ED6D00B43BB7 /* Configuration  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Configuration ";
+			sourceTree = "<group>";
+		};
 		153E04C42688D54900F5D274 /* ApplicationDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +159,8 @@
 		153E04CD2688D66A00F5D274 /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				1521A6952688E94200B43BB7 /* Configuration */,
+				1521A6922688E82300B43BB7 /* Router */,
 				153E04DC2688DB3000F5D274 /* Interactor */,
 				153E04DF2688DBCC00F5D274 /* Presenter */,
 				153E04E02688DBEB00F5D274 /* View */,
@@ -129,6 +180,7 @@
 		153E04DB2688DB1100F5D274 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1521A69A2688ECDE00B43BB7 /* Detail User */,
 				153E04CD2688D66A00F5D274 /* Users */,
 			);
 			path = Scenes;
@@ -272,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1521A69F2688ED1D00B43BB7 /* DetailUserViewController.xib in Resources */,
 				15AFB2492688D43E00DB335C /* LaunchScreen.storyboard in Resources */,
 				153E04D12688D69A00F5D274 /* UsersViewController.xib in Resources */,
 				15AFB2462688D43E00DB335C /* Assets.xcassets in Resources */,
@@ -336,10 +389,13 @@
 				153E04E22688DC1800F5D274 /* UsersPresenter.swift in Sources */,
 				153E04DA2688D74100F5D274 /* UsersVC+TableView.swift in Sources */,
 				153E04CC2688D5FE00F5D274 /* UsersAddress.swift in Sources */,
+				1521A6972688E96200B43BB7 /* UsersConfiguration.swift in Sources */,
 				153E04D72688D72F00F5D274 /* UsersViewCell.swift in Sources */,
+				1521A69E2688ED1D00B43BB7 /* DetailUserViewController.swift in Sources */,
 				153E04E42688DC3600F5D274 /* Presenter-Protocols.swift in Sources */,
 				153E04DE2688DB4E00F5D274 /* UsersInteractor.swift in Sources */,
 				153E04CA2688D5DB00F5D274 /* UsersModel.swift in Sources */,
+				1521A6942688E83600B43BB7 /* UsersRouter.swift in Sources */,
 				15AFB23F2688D43D00DB335C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

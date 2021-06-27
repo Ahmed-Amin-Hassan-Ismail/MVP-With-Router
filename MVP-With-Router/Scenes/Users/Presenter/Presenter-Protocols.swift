@@ -24,3 +24,7 @@ protocol IUsersPresenter {
     func getCount() -> Int
     func displayData(for cell: UsersViewCell, in index: Int)
 }
+
+
+// MARK: - Users Router Protocol
+

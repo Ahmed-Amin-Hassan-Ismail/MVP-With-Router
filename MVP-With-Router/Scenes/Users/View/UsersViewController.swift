@@ -30,7 +30,7 @@ class UsersViewController: UIViewController {
          
         // set up table view
         setupTableView()
-        
+        UsersConfiguration.configure(usersVC: self)
         presenter.viewDidLoad()
         
     }

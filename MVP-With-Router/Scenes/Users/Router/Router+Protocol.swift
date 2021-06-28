@@ -12,7 +12,9 @@ import Foundation
 extension UsersRouter: IUsersRouter {
     
     func navigationToDetailScreen(user: UsersModel) {
-       //let DetailUserScreen = DetailUserViewController()
+       let DetailUserScreen = DetailUserViewController()
+        DetailConfiguration.configure(viewController: DetailUserScreen, user: user)
+        view?.navigateToNextScreen(to: DetailUserScreen)
         
     }
     

@@ -11,9 +11,18 @@ import Foundation
 // MARK:- Detail View Protocol
 
 protocol IDetailView {
+    
 }
 
 // MARK: - Detail Presenter Protocol
 
 protocol IDetailPresenter {
+    func  displayUser(for view: DetailUserView) 
+}
+
+// MARK: - Detail Router Protocol
+
+protocol IDetailRouter {
+    
+    func navigationToNextScreen()
 }

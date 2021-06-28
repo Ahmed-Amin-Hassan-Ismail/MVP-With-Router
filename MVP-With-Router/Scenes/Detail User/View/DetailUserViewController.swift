@@ -9,12 +9,21 @@
 import UIKit
 
 class DetailUserViewController: UIViewController {
-
+    
+    private var presenter: IDetailPresenter?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // display Labels
+        presenter?.displayUser(for: view as! DetailUserView)
+        
     }
-
+    
+    // Setter
+    func setPresent(presenter: IDetailPresenter) {
+        self.presenter = presenter
+    }
 
 }

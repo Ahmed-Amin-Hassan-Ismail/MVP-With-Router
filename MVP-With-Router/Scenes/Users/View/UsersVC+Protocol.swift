@@ -30,5 +30,7 @@ extension UsersViewController: IUsersView {
         showErrorAlert()
     }
     
-    
+    func navigateToNextScreen(to viewController: DetailUserViewController) {
+        navigationController?.pushViewController(viewController, animated: true)
+      }
 }

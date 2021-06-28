@@ -20,9 +20,9 @@ extension UsersPresenter: IUsersPresenter {
         cell.usernameLabel.text = user.username
         cell.emailLabel.text = user.email
     }
-   
-    func didSelectRow(at index: Int) {
-        
+    
+    func didSelectRow(in index: Int) {
+        router?.navigationToDetailScreen(user: users[index])
     }
     
 }

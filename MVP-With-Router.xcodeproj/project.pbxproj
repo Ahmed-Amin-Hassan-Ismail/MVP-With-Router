@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15054C552689CE0500E88DA4 /* Router+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15054C542689CE0500E88DA4 /* Router+Protocol.swift */; };
+		15054C5E2689E78600E88DA4 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15054C5D2689E78600E88DA4 /* DetailPresenter.swift */; };
+		15054C602689E79300E88DA4 /* DetailPresenter+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15054C5F2689E79300E88DA4 /* DetailPresenter+Protocol.swift */; };
 		1521A6942688E83600B43BB7 /* UsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1521A6932688E83600B43BB7 /* UsersRouter.swift */; };
 		1521A6972688E96200B43BB7 /* UsersConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1521A6962688E96200B43BB7 /* UsersConfiguration.swift */; };
 		1521A69E2688ED1D00B43BB7 /* DetailUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1521A69C2688ED1D00B43BB7 /* DetailUserViewController.swift */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15054C542689CE0500E88DA4 /* Router+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Protocol.swift"; sourceTree = "<group>"; };
+		15054C5D2689E78600E88DA4 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		15054C5F2689E79300E88DA4 /* DetailPresenter+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailPresenter+Protocol.swift"; sourceTree = "<group>"; };
 		1521A6932688E83600B43BB7 /* UsersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRouter.swift; sourceTree = "<group>"; };
 		1521A6962688E96200B43BB7 /* UsersConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersConfiguration.swift; sourceTree = "<group>"; };
 		1521A69C2688ED1D00B43BB7 /* DetailUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserViewController.swift; sourceTree = "<group>"; };
@@ -72,10 +78,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15054C562689CE4400E88DA4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				15054C5D2689E78600E88DA4 /* DetailPresenter.swift */,
+				15054C5F2689E79300E88DA4 /* DetailPresenter+Protocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		1521A6922688E82300B43BB7 /* Router */ = {
 			isa = PBXGroup;
 			children = (
 				1521A6932688E83600B43BB7 /* UsersRouter.swift */,
+				15054C542689CE0500E88DA4 /* Router+Protocol.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -92,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				1521A6A02688ED6D00B43BB7 /* Configuration  */,
+				15054C562689CE4400E88DA4 /* Presenter */,
 				1521A69B2688ED0300B43BB7 /* View */,
 			);
 			path = "Detail User";
@@ -395,8 +412,11 @@
 				153E04E42688DC3600F5D274 /* Presenter-Protocols.swift in Sources */,
 				153E04DE2688DB4E00F5D274 /* UsersInteractor.swift in Sources */,
 				153E04CA2688D5DB00F5D274 /* UsersModel.swift in Sources */,
+				15054C602689E79300E88DA4 /* DetailPresenter+Protocol.swift in Sources */,
 				1521A6942688E83600B43BB7 /* UsersRouter.swift in Sources */,
+				15054C552689CE0500E88DA4 /* Router+Protocol.swift in Sources */,
 				15AFB23F2688D43D00DB335C /* SceneDelegate.swift in Sources */,
+				15054C5E2689E78600E88DA4 /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

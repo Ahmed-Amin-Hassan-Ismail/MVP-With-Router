@@ -15,6 +15,7 @@ extension UsersViewController: UITableViewDataSource {
     func setupTableView() {
         // confirm to data source protocol
         tableView.dataSource = self
+        tableView.delegate = self
         
         // create nib file
         let nibFile = UINib(nibName: "UsersViewCell", bundle: nil)
@@ -36,4 +37,13 @@ extension UsersViewController: UITableViewDataSource {
         return cell
     }
 
+}
+
+// MARK: - Table View Delegate
+
+extension UsersViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectRow(in: indexPath.row)
+    }
 }

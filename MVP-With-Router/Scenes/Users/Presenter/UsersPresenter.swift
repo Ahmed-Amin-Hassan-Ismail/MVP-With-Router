@@ -12,10 +12,12 @@ class UsersPresenter {
     
     private var userInteractor: UsersInteractor!
     private weak var view: IUsersView?
+    var router: IUsersRouter?
     var users = [UsersModel]()
     
-    init(view: IUsersView, userInterator: UsersInteractor) {
+    init(view: IUsersView, router: IUsersRouter ,userInterator: UsersInteractor) {
         self.view = view
+        self.router = router
         self.userInteractor = userInterator
     }
     

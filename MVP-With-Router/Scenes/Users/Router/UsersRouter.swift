@@ -10,5 +10,11 @@ import Foundation
 
 class UsersRouter {
     
- 
+    var view: IUsersView?
+    
+    init(view: IUsersView) {
+        self.view = view
+    }
+    
 }
+

@@ -10,5 +10,11 @@ import Foundation
 
 class UsersConfiguration {
     
- 
+    static func configure(usersVC: UsersViewController) {
+        
+        let userInteractor = UsersInteractor()
+        let router = UsersRouter(view: usersVC)
+        let presenter = UsersPresenter(view: usersVC, router: router, userInterator: userInteractor)
+        usersVC.presenter = presenter
+    }
 }

@@ -14,8 +14,7 @@ class UsersViewController: UIViewController {
     // instance variables
     let cellIdentifier = "usersCell"
     let loading = NVActivityIndicatorView(frame: .zero, type: .circleStrokeSpin, color: .black, padding: 0)
-    var presenter: UsersPresenter!
-    var interactor = UsersInteractor()
+    var presenter: IUsersPresenter!
     
     // Outlets
     @IBOutlet weak var tableView: UITableView!
@@ -32,7 +31,6 @@ class UsersViewController: UIViewController {
         // set up table view
         setupTableView()
         
-        presenter = UsersPresenter(view: self, userInterator: interactor)
         presenter.viewDidLoad()
         
     }
